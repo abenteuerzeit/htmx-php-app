@@ -1,0 +1,14 @@
+run = "php -S 0.0.0.0:8000 -t public"
+
+entrypoint = "public/index.php"
+
+[nix]
+channel = "stable-22_11"
+
+[deployment]
+run = ["php", "-S", "0.0.0.0:8000", "-t", "public"]
+deploymentTarget = "cloudrun"
+
+[[ports]]
+localPort = 8000
+externalPort = 80
