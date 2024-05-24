@@ -1,6 +1,7 @@
 {
     "name": "abenteuerzeit/htmx-php-app",
     "description": "A PHP application using HTMX, SQLite, and Cirrus for fun web development.",
+    "license": "EUPL-1.2",
     "autoload": {
         "psr-4": {
             "App\\": "app/"
